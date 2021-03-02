@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumentJS</title>
+
+    <style>
+       .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: radial-gradient(purple, black);
+        color: black;
+       }
+
+       h2{
+           font-size: 40px;
+        text-shadow: 1px 1px #f8f5f5;
+
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="mainTextname">Parlaci di te!</h2>
+        
+
+
+    </div>
+
+    <script>
+
+        alert("Per personalizzare il nostro servizio ti faremo alcune domande. Se sei d'accordo premi ok!" );
+
+        var nameUser= prompt('1) Come ti chiami?');
+
+        var lastnameUser= prompt('2) Qual è il tuo cognome?');
+
+        var ageUser= parseInt(prompt('3) Quanti anni hai?'));
+
+        var favcolUser= prompt('4) Qual è il tuo colore preferito?');
+
+       // console.log(nameUser, lastnameUser, ageUser, favcolUser);
+
+       document.getElementById('mainTextname').innerHTML = nameUser+lastnameUser+ageUser+favcolUser;
+       
+        
+        
+        
+        
+
+
+    </script>
+</body>
+</html>
+Ciao! Per garantire un servizio personalizzato rispondi alle seguenti domande:
